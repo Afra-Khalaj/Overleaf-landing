@@ -11,7 +11,7 @@ const SecondaryButton = ({ children, href }: SecondaryButtonProps) => {
   return (
     <Link href={href}>
       <button
-        className="btn border-primary border-2 bg-base-100 font-body text-neutral-content normal-case text-lg hover:bg-neutral hover:border-secondary cursor-pointer"
+        className="btn btn-secondary btn-outline border-2 rounded-lg font-body text-base-content normal-case text-lg hover:bg-base-100 hover:!text-secondary-content cursor-pointer"
       >
         {children}
       </button>
