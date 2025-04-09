@@ -1,0 +1,86 @@
+import React from "react";
+import TemplateCard from "../components/TemplateCard/TemplateCard";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+
+const Templates = () => {
+  return (
+    <>
+      <Header />
+      <div className="flex flex-col items-center">
+        <h1 className="font-title text-4xl text-primary my-10 mb-20">
+          Templates
+        </h1>
+        <div className="flex flex-row space-x-10 mb-10">
+          <TemplateCard
+            templateName="Presentation"
+            templateImg="/icons/presentation.svg"
+            templateDesc="This is a test description!"
+          />
+          <TemplateCard
+            templateName="Thesis"
+            templateImg="/icons/thesis.svg"
+            templateDesc="This is a test description!"
+          />
+          <TemplateCard
+            templateName="Resume"
+            templateImg="/icons/CV.svg"
+            templateDesc="This is a test description!"
+          />
+          <TemplateCard
+            templateName="Poster"
+            templateImg="/icons/poster.svg"
+            templateDesc="This is a test description!"
+          />
+        </div>
+        <div className="flex flex-row space-x-10 mb-10">
+          <TemplateCard
+            templateName="Book"
+            templateImg="/icons/book.svg"
+            templateDesc="This is a test description!"
+          />
+          <TemplateCard
+            templateName="Cover Letter"
+            templateImg="/icons/mail.svg"
+            templateDesc="This is a test description!"
+          />
+          <TemplateCard
+            templateName="Title Page"
+            templateImg="/icons/title.svg"
+            templateDesc="This is a test description!"
+          />
+          <TemplateCard
+            templateName="Formal Letter"
+            templateImg="/icons/letter.svg"
+            templateDesc="This is a test description!"
+          />
+        </div>
+        <div className="flex flex-row space-x-10 mb-10">
+          <TemplateCard
+            templateName="Charts"
+            templateImg="/icons/chart.svg"
+            templateDesc="This is a test description!"
+          />
+          <TemplateCard
+            templateName="Academic Journal"
+            templateImg="/icons/mortarboard.svg"
+            templateDesc="This is a test description!"
+          />
+          <TemplateCard
+            templateName="Assignment"
+            templateImg="/icons/assignment.svg"
+            templateDesc="This is a test description!"
+          />
+          <TemplateCard
+            templateName="Business Card"
+            templateImg="/icons/businessCard.svg"
+            templateDesc="This is a test description!"
+          />
+        </div>
+      </div>
+      <Footer/>
+    </>
+  );
+};
+
+export default Templates;
