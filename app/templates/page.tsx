@@ -1,14 +1,14 @@
 import React from "react";
-import TemplateCard from "../components/TemplateCard/TemplateCard";
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
+import TemplateCard from "../_components/TemplateCard/TemplateCard";
+import Header from "../_components/Header/Header";
+import Footer from "../_components/Footer/Footer";
 
 const Templates = () => {
   return (
     <>
       <Header />
       <div className="flex flex-col items-center">
-        <h1 className="font-title text-4xl text-primary my-10 mb-20">
+        <h1 className="font-title font-medium text-4xl text-primary my-10 mb-20">
           Templates
         </h1>
         <div className="flex flex-row space-x-10 mb-10">
