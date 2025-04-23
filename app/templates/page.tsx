@@ -12,12 +12,7 @@ const Templates = () => {
           Templates
         </h1>
         <div className="flex flex-row space-x-10 mb-10">
-          <TemplateCard
-            templateName="Presentation"
-            templateImg="/icons/presentation.svg"
-            templateDesc="This is a test description!"
-          />
-          <TemplateCard
+          <TemplateCard //afra
             templateName="Thesis"
             templateImg="/icons/thesis.svg"
             templateDesc="This is a test description!"
@@ -28,57 +23,68 @@ const Templates = () => {
             templateDesc="This is a test description!"
           />
           <TemplateCard
+            templateName="Academic Journal" //afra
+            templateImg="/icons/mortarboard.svg"
+            templateDesc="This is a test description!"
+          />
+          <TemplateCard
+            templateName="Business Card"
+            templateImg="/icons/mic.svg"
+            templateDesc="This is a test description!"
+          />
+          {/* <TemplateCard
+            templateName="Presentation"
+            templateImg="/icons/presentation.svg"
+            templateDesc="This is a test description!"
+          /> */}
+          {/* <TemplateCard
             templateName="Poster"
             templateImg="/icons/poster.svg"
             templateDesc="This is a test description!"
-          />
-        </div>
+          /> */}
+          {/* </div>
         <div className="flex flex-row space-x-10 mb-10">
           <TemplateCard
             templateName="Book"
             templateImg="/icons/book.svg"
             templateDesc="This is a test description!"
-          />
-          <TemplateCard
+          /> */}
+          {/* <TemplateCard
             templateName="Cover Letter"
             templateImg="/icons/mail.svg"
             templateDesc="This is a test description!"
-          />
-          <TemplateCard
+          /> */}
+          {/* <TemplateCard
             templateName="Title Page"
             templateImg="/icons/title.svg"
             templateDesc="This is a test description!"
-          />
-          <TemplateCard
+          /> */}
+          {/* <TemplateCard
             templateName="Formal Letter"
             templateImg="/icons/letter.svg"
             templateDesc="This is a test description!"
-          />
-        </div>
+          /> */}
+          {/* </div>
         <div className="flex flex-row space-x-10 mb-10">
           <TemplateCard
             templateName="Charts"
             templateImg="/icons/chart.svg"
             templateDesc="This is a test description!"
-          />
-          <TemplateCard
-            templateName="Academic Journal"
-            templateImg="/icons/mortarboard.svg"
-            templateDesc="This is a test description!"
-          />
-          <TemplateCard
+          /> */}
+
+          {/* <TemplateCard
             templateName="Assignment"
             templateImg="/icons/assignment.svg"
             templateDesc="This is a test description!"
-          />
-          <TemplateCard
+          /> */}
+          {/* <TemplateCard
             templateName="Business Card"
             templateImg="/icons/businessCard.svg"
             templateDesc="This is a test description!"
-          />
+          /> */}
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

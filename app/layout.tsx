@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${playfair.variable} ${sourceSans.variable}`} data-theme="overleafTheme">
-      <body className="font-body">{children}</body>
+      <body className="font-body bg-accent">{children}</body>
     </html>
   )
 }
