@@ -4,6 +4,11 @@ import Header from "../_components/Header/Header";
 import Footer from "../_components/Footer/Footer";
 
 const Templates = () => {
+
+  function handleTemplateClick(templateName: string) {
+    console.log(`Clicked on template: ${templateName}`);
+  };
+
   return (
     <>
       <Header />
@@ -12,7 +17,7 @@ const Templates = () => {
           Templates
         </h1>
         <div className="flex flex-row space-x-10 mb-10">
-          <TemplateCard //afra
+          <TemplateCard
             templateName="Thesis"
             templateImg="/icons/thesis.svg"
             templateDesc="This is a test description!"
@@ -23,7 +28,7 @@ const Templates = () => {
             templateDesc="This is a test description!"
           />
           <TemplateCard
-            templateName="Academic Journal" //afra
+            templateName="Academic Journal"
             templateImg="/icons/mortarboard.svg"
             templateDesc="This is a test description!"
           />
