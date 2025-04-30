@@ -5,7 +5,7 @@ import SecondaryButton from "../SecondaryButton/SecondaryButton";
 const TemplatesDiv = () => {
   return (
     <div className="flex flex-col items-center">
-      <h1 className="mt-20 mb-10 font-body text-2xl">Explore our Templates!</h1>
+      <h1 className="mt-20 mb-10 font-body text-2xl">قالب‌های ما:</h1>
       <div className="flex flex-row space-x-7 mb-10">
         <TemplateCard
           templateName="Presentation"
