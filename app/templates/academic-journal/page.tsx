@@ -6,7 +6,7 @@ const page = () => {
     <>
       <Header />
       <h1 className="font-body font-medium text-2xl text-neutral mt-10 ml-20">
-        You can view and use our projects here!
+        You can view and use our Academic journal projects here!
       </h1>
       <p className="font-body font-medium text-xl text-base-400 mt-5 mb-14 ml-20">
         Choose the template that best suits your project, click on it to view
