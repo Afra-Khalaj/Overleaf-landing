@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Playfair_Display, Source_Sans_3 } from 'next/font/google'
+import LangSetter from './_components/LangSetter/LangSetter';
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -26,7 +27,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${playfair.variable} ${sourceSans.variable}`} data-theme="overleafTheme">
-      <body className="font-body">{children}</body>
+      <body className="font-body"><LangSetter />{children}</body>
     </html>
   )
 }

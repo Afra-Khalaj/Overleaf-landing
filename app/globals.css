@@ -19,3 +19,8 @@
 body {
   padding: 1rem;
 }
+
+html[lang='fa'] {
+  direction: rtl;
+  font-family: 'Vazirmatn', sans-serif;
+}
