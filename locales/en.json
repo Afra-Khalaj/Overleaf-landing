@@ -1,6 +1,6 @@
 {
-    "greeting": "Hello",
-    "farewell": "Goodbye",
-    "home": "Home"
-  }
-  
+  "greeting": "Hello",
+  "farewell": "Goodbye",
+  "home": "Home",
+  "template": "Templates"
+}

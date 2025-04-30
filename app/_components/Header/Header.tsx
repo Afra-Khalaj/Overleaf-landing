@@ -23,14 +23,15 @@ const Header = () => {
       >
         HPC LaTeX Editor
       </Link>
-      <button onClick={() => changeLanguage("en")}>
+      {/* <button onClick={() => changeLanguage("en")}>
         <FormattedMessage id="changeLanguage" /> (English)
       </button>
       <button onClick={() => changeLanguage("fa")}>
         <FormattedMessage id="changeLanguage" /> (فارسی)
-      </button>
+      </button> */}
       <Link href="/templates" className="ml-auto text-xl hover:text-primary">
-        Templates
+        {/* Templates */}
+        <FormattedMessage id="template" /> 
       </Link>
       <Link href="/docs" className="ml-6 mr-6 text-xl hover:text-primary">
         Docs
