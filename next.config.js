@@ -1,11 +1,22 @@
 /** @type {import('next').NextConfig} */
-const { i18n } = require('./next-i18next.config');
 const nextConfig = {
-    i18n,
-  // Ensuring the middleware is enabled in Next.js 13.4+
-  async rewrites() {
-    return [];
+  // experimental: {
+  //   serverActions: true,
+  // },
+  i18n: {
+    locales: ["fa", "en"],
+    defaultLocale: "fa", // Set fa as default
+    // localeDetection: false,
   },
-}
+  // async redirects() {
+  //   return [
+  //     {
+  //       source: "/",
+  //       destination: "/fa",
+  //       permanent: true,
+  //     },
+  //   ];
+  // },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
