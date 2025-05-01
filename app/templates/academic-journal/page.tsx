@@ -1,3 +1,4 @@
+import Footer from "@/app/_components/Footer/Footer";
 import Header from "@/app/_components/Header/Header";
 import React from "react";
 
@@ -5,26 +6,46 @@ const page = () => {
   return (
     <>
       <Header />
-      <h1 className="font-body font-medium text-2xl text-neutral mt-10 ml-20">
-        You can view and use our Academic journal projects here!
-      </h1>
-      <p className="font-body font-medium text-xl text-base-400 mt-5 mb-14 ml-20">
-        Choose the template that best suits your project, click on it to view
-        the project's preview.
-      </p>
+      <div
+        style={{
+          marginTop: "10px",
+          backgroundColor: "#F4F5F6",
+          height: "120px",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          width: "100%",
+          marginBottom: "50px",
+          boxShadow: "0px 0px 5px rgba(0, 0, 0, 0.2)",
+          borderRadius: "10px",
+        }}
+      >
+        <h1 className="font-body font-medium text-2xl text-neutral mt-14 ms-20">
+          You can view and use our Academic journal projects here!
+        </h1>
+        <p className="font-body font-medium text-l text-base-400 mt-3 mb-14 ms-20">
+          Choose the template that best suits your project, click on it to view
+          the project's preview.
+        </p>
+      </div>
       <div
         style={{
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-evenly",
+          // backgroundColor: "#F4F5F6",
+          // boxShadow: "0px 0px 2px rgba(0, 0, 0, 0.2)",
+          // borderRadius: "10px",
+          padding: "80px",
+          paddingTop: "30px",
         }}
       >
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "1.2fr 1.2fr", // Two equal columns
+            gridTemplateColumns: "1.2fr 1.2fr 1.2fr 1.2fr", // Two equal columns
             gridTemplateRows: "0fr 0fr", // Two rows (can be adjusted if needed)
-            gap: "50px",
+            gap: "100px",
             justifyItems: "center", // Center items within their grid cells
           }}
         >
@@ -32,7 +53,7 @@ const page = () => {
             <img
               src="/templates/Topology-Proceedings-Template.png"
               alt="Thesis"
-              width="200px"
+              width="300px"
               style={{
                 boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)",
                 borderRadius: "2px",
@@ -49,7 +70,7 @@ const page = () => {
             <img
               src="/templates/Topology-Proceedings-Template.png"
               alt="Thesis"
-              width="200px"
+              width="300px"
               style={{
                 boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)",
                 borderRadius: "2px",
@@ -66,7 +87,7 @@ const page = () => {
             <img
               src="/templates/Topology-Proceedings-Template.png"
               alt="Thesis"
-              width="200px"
+              width="300px"
               style={{
                 boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)",
                 borderRadius: "2px",
@@ -83,7 +104,75 @@ const page = () => {
             <img
               src="/templates/Topology-Proceedings-Template.png"
               alt="Thesis"
-              width="200px"
+              width="300px"
+              style={{
+                boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)",
+                borderRadius: "2px",
+              }}
+            />
+            <h1
+              className="font-body font-medium text-l mt-5 text-neutral"
+              style={{ width: "200px" }}
+            >
+              Nordic Machine Intelligence Template
+            </h1>
+          </div>
+          <div>
+            <img
+              src="/templates/Topology-Proceedings-Template.png"
+              alt="Thesis"
+              width="300px"
+              style={{
+                boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)",
+                borderRadius: "2px",
+              }}
+            />
+            <h1
+              className="font-body font-medium text-l mt-5 text-neutral"
+              style={{ width: "200px" }}
+            >
+              Nordic Machine Intelligence Template
+            </h1>
+          </div>
+          <div>
+            <img
+              src="/templates/Topology-Proceedings-Template.png"
+              alt="Thesis"
+              width="300px"
+              style={{
+                boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)",
+                borderRadius: "2px",
+              }}
+            />
+            <h1
+              className="font-body font-medium text-l mt-5 text-neutral"
+              style={{ width: "200px" }}
+            >
+              Nordic Machine Intelligence Template
+            </h1>
+          </div>
+          <div>
+            <img
+              src="/templates/Topology-Proceedings-Template.png"
+              alt="Thesis"
+              width="300px"
+              style={{
+                boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)",
+                borderRadius: "2px",
+              }}
+            />
+            <h1
+              className="font-body font-medium text-l mt-5 text-neutral"
+              style={{ width: "200px" }}
+            >
+              Nordic Machine Intelligence Template
+            </h1>
+          </div>
+          <div>
+            <img
+              src="/templates/Topology-Proceedings-Template.png"
+              alt="Thesis"
+              width="300px"
               style={{
                 boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)",
                 borderRadius: "2px",
@@ -97,7 +186,7 @@ const page = () => {
             </h1>
           </div>
         </div>
-        <div style={{ display: "flex", justifyContent: "flex-end" }}>
+        {/* <div style={{ display: "flex", justifyContent: "flex-end" }}>
           <div>
             <img
               src="/templates/Topology-Proceedings-Template.png"
@@ -112,8 +201,9 @@ const page = () => {
               Academic Journal
             </h1>
           </div>
-        </div>
+        </div> */}
       </div>
+      <Footer />
     </>
   );
 };
