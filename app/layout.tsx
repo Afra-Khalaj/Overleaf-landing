@@ -25,8 +25,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${playfair.variable} ${sourceSans.variable}`} data-theme="overleafTheme">
-      <body className="font-body">{children}</body>
+    <html lang="fa" dir="ltr" className={`${playfair.variable} ${sourceSans.variable}`}>
+      <head>
+        <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet" />
+      </head>
+      <body className="font-vazir">{children}</body>
     </html>
   )
 }
