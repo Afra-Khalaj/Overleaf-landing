@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" dir='ltr' className={`${playfair.variable} ${sourceSans.variable}`} data-theme="overleafTheme">
+    <html lang="en" dir='rtl' className={`${playfair.variable} ${sourceSans.variable}`} data-theme="overleafTheme">
       <body className="font-body">{children}</body>
     </html>
   )
