@@ -36,6 +36,8 @@ const config: Config = {
           "base-100": "#ffffff",       // White background
           "base-content": "#1B222C",
 
+          "base-200": "#DBDCE0",
+
           "base-300": "#495365", // Lighter grey
           "base-400": "#1B222C", // Darker grey
 
