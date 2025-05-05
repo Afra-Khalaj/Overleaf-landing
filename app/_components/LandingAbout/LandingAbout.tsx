@@ -2,10 +2,6 @@
 
 import React from "react";
 import LandingAboutCard from "../LandingAboutCard/LandingAboutCard";
-// import rocket from "/icons/rocket.svg";
-// import users from "/icons/users.svg";
-// import compile from "/icons/redo.svg";
-// import language from "/icons/language.svg";
 
 const LandingAbout = () => {
   // const isRTL = document?.documentElement?.lang === "fa";
