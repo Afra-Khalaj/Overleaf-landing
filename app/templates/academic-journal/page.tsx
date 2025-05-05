@@ -25,7 +25,7 @@ const page = () => {
         </h1>
         <p className="font-body font-medium text-l text-base-400 mt-3 mb-14 ms-20">
           Choose the template that best suits your project, click on it to view
-          the project's preview.
+          the project&apos;s preview.
         </p>
       </div>
       <div
