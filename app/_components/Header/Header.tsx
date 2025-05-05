@@ -4,11 +4,11 @@ import PrimaryButton from '../PrimaryButton/PrimaryButton'
 
 const Header = () => {
   return (
-    <div className='flex items-center px-6 pb-10'>
+    <div className='flex items-center px-6 pb-6'>
         <Link className='text text-4xl text-primary font-title font-semibold' href="/">HPC LaTeX Editor</Link>
-        <Link href="/templates" className='ml-auto text-xl hover:text-primary'>Templates</Link>
-        <Link href="/docs" className='ml-6 mr-6 text-xl hover:text-primary'>Docs</Link>
-        <PrimaryButton href="https://dev.latex.hpc.ipm.ac.ir">Login</PrimaryButton>
+        <Link href="/templates" className='ms-auto text-xl hover:text-primary'>قالب‌ها</Link>
+        <Link href="/docs" className='ms-6 me-6 text-xl hover:text-primary'>مستندات</Link>
+        <PrimaryButton href="https://dev.latex.hpc.ipm.ac.ir">ورود</PrimaryButton>
     </div>
   )
 }

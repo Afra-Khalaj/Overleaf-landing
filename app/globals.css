@@ -16,6 +16,15 @@
   }
 }
 
+:root {
+  --font-vazirmatn: 'Vazirmatn', sans-serif;
+}
+
+.font-vazirmatn {
+  font-family: var(--font-vazirmatn);
+}
+
 body {
-  padding: 1rem;
+  padding: 0;
+  padding-top: 1.5rem;
 }

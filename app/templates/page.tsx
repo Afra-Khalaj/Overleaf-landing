@@ -4,37 +4,43 @@ import Header from "../_components/Header/Header";
 import Footer from "../_components/Footer/Footer";
 
 const Templates = () => {
-
   function handleTemplateClick(templateName: string) {
     console.log(`Clicked on template: ${templateName}`);
-  };
+  }
 
   return (
     <>
       <Header />
       <div className="flex flex-col items-center">
-        <h1 className="font-title font-medium text-4xl text-primary my-10 mb-20">
-          Templates
+        <h1 className=" font-medium text-4xl text-primary my-10 mb-20">
+          قالب‌ها
         </h1>
-        <div className="flex flex-row space-x-10 mb-10">
+        <div
+          className="flex flex-row items-center space-x-10 mb-10 h-[300px]"
+          dir="ltr"
+        >
           <TemplateCard
-            templateName="Thesis"
+            templateName="ژرنال آکادمیک"
+            // templateName="Academic Journal"
+            templateImg="/icons/journal.svg"
+            templateDesc="This is a test description!"
+          />
+          <TemplateCard
+            // templateName="Thesis"
+            templateName="پایان‌نامه"
             templateImg="/icons/thesis.svg"
             templateDesc="This is a test description!"
           />
           <TemplateCard
-            templateName="Resume"
-            templateImg="/icons/CV.svg"
+            // templateName="Conference"
+            templateName="کنفرانس"
+            templateImg="/icons/conference.svg"
             templateDesc="This is a test description!"
           />
           <TemplateCard
-            templateName="Academic Journal"
-            templateImg="/icons/mortarboard.svg"
-            templateDesc="This is a test description!"
-          />
-          <TemplateCard
-            templateName="Conference"
-            templateImg="/icons/poster.svg"
+            // templateName="Resume"
+            templateName="رزومه"
+            templateImg="/icons/resume.svg"
             templateDesc="This is a test description!"
           />
           {/* <TemplateCard
