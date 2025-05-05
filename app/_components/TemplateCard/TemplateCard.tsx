@@ -13,7 +13,7 @@ const TemplateCard = ({
 }: TemplateCardProps) => {
   return (
     <div
-      className="w-60 h-64 bg-base-300 hover:bg-base-300/65 hover:w-64 hover:h-72 transition-all duration-300 flex flex-col items-center justify-center text-center rounded-lg rounded-b-xl cursor-pointer"
+      className="w-60 h-64 bg-base-300 hover:bg-[#898F9B] hover:w-64 hover:h-72 transition-all duration-300 flex flex-col items-center justify-center text-center rounded-lg rounded-b-xl cursor-pointer"
       style={{
       boxShadow: "0px 2px 6px 2px rgba(0, 0, 0, 0.3)",
       }}
