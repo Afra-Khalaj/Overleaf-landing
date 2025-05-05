@@ -19,7 +19,7 @@ const TemplateCard = ({
       }}
     >
       <img src={templateImg} alt={templateName} className="h-auto p-6" />
-      <h1 className="text-xl font-body my-2 text-base-100 font-semibold">
+      <h1 className="text-xl my-2 text-base-100 font-medium">
       {templateName}
       </h1>
       <p className="text-base text-base-100">{templateDesc}</p>

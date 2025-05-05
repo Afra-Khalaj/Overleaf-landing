@@ -4,14 +4,14 @@ import TypewriterText from "../TypewriterText/TypewriterText";
 
 const WelcomeDiv = () => {
   return (
-    <div className=" bg-secondary items-center">
-      <div className="flex flex-row items-center justify-between py-10 px-12 h-[600px]">
-        <div className="flex flex-col content-between w-[52%]">
+    <div className="bg-secondary items-center">
+      <div className="flex flex-row items-center justify-between py-10 px-12 h-[550px]">
+        <div className="flex flex-col content-between w-[54%] ms-8">
           <h1 className="text-4xl font-bold mb-10">
             {/* Start Writing with <span className="text-primary">LaTeX</span>:
             Powerful and Simple */}
             یک جایگزین ساده و قدرتمند برای{" "}
-            <span className="text-primary">Overleaf</span>
+            <span className="text-primary font-title">Overleaf</span>
           </h1>
 
           <p className="w-9/12 text-start text-xl font-medium leading-loose">
@@ -27,19 +27,9 @@ const WelcomeDiv = () => {
             className="text-[23px] px-10 mt-7"
             href="https://dev.latex.hpc.ipm.ac.ir"
           >
-            Try it Now!
+            امتحان کنید!
           </PrimaryButton>
         </div>
-
-        {/* <video
-          className="w-full max-w-2xl mb-10 mt-2 rounded-md"
-          autoPlay
-          loop
-          muted
-        >
-          <source src="/gifs/editor-pdf-video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video> */}
         <TypewriterText />
       </div>
     </div>
