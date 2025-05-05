@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html
-      lang="fa"
+      lang="en"
       dir="ltr"
       className={`${playfair.variable} ${sourceSans.variable}`}
     >
