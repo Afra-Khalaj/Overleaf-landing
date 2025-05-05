@@ -17,13 +17,12 @@
 }
 
 :root {
-  --font-vazir: 'Vazir', sans-serif;
+  --font-vazirmatn: 'Vazirmatn', sans-serif;
 }
 
-.font-vazir {
-  font-family: var(--font-vazir);
+.font-vazirmatn {
+  font-family: var(--font-vazirmatn);
 }
-
 
 body {
   padding: 0;
