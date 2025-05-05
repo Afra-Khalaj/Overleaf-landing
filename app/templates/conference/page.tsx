@@ -20,12 +20,15 @@ const page = () => {
           borderRadius: "10px",
         }}
       >
-        <h1 className="font-body font-medium text-2xl text-neutral mt-14 ms-20">
-          You can view and use our Academic journal projects here!
+        <h1 className="font-medium text-2xl text-neutral mt-14 ms-20">
+          {/* You can view and use our Academic journal projects here! */}
+          می‌تونید پروژه‌ها در قالب کنفرانس رو اینجا ببینید و استفاده کنید!
         </h1>
-        <p className="font-body font-medium text-l text-base-400 mt-3 mb-14 ms-20">
-          Choose the template that best suits your project, click on it to view
-          the project&apos;s preview.
+        <p className="font-medium text-l text-base-400 mt-3 mb-14 ms-20">
+          {/* Choose the template that best suits your project, click on it to view
+          the project&apos;s preview. */}
+          پروژه‌ای که برات مناسب‌تره رو انتخاب کن و با کلیک کردن روش پیش‌نمایش
+          پروژه رو ببین.
         </p>
       </div>
       <div
@@ -39,6 +42,7 @@ const page = () => {
           padding: "80px",
           paddingTop: "30px",
         }}
+        dir="ltr"
       >
         <div
           style={{
