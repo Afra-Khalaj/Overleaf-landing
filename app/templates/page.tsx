@@ -12,27 +12,34 @@ const Templates = () => {
     <>
       <Header />
       <div className="flex flex-col items-center">
-        <h1 className="font-title font-medium text-4xl text-primary my-10 mb-20">
-          Templates
+        <h1 className=" font-medium text-4xl text-primary my-10 mb-20">
+          قالب‌ها
         </h1>
-        <div className="flex flex-row items-center space-x-10 mb-10 h-[300px]" dir="ltr">
+        <div
+          className="flex flex-row items-center space-x-10 mb-10 h-[300px]"
+          dir="ltr"
+        >
           <TemplateCard
-            templateName="Academic Journal"
+            templateName="ژرنال آکادمیک"
+            // templateName="Academic Journal"
             templateImg="/icons/journal.svg"
             templateDesc="This is a test description!"
           />
           <TemplateCard
-            templateName="Thesis"
+            // templateName="Thesis"
+            templateName="پایان‌نامه"
             templateImg="/icons/thesis.svg"
             templateDesc="This is a test description!"
           />
           <TemplateCard
-            templateName="Conference"
+            // templateName="Conference"
+            templateName="کنفرانس"
             templateImg="/icons/conference.svg"
             templateDesc="This is a test description!"
           />
           <TemplateCard
-            templateName="Resume"
+            // templateName="Resume"
+            templateName="رزومه"
             templateImg="/icons/resume.svg"
             templateDesc="This is a test description!"
           />
