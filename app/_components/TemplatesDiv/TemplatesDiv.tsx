@@ -4,31 +4,35 @@ import SecondaryButton from "../SecondaryButton/SecondaryButton";
 
 const TemplatesDiv = () => {
   return (
-    <div className="flex flex-col items-center">
-      <h1 className="mt-20 mb-10 font-body text-2xl">Explore our Templates!</h1>
-      <div className="flex flex-row space-x-7 mb-10">
+    <div className="flex flex-col items-center mt-28">
+      <h1 className="mt-20 mb-10 text-2xl">قالب‌های ما</h1>
+      <div className="flex flex-row items-center space-x-7 mb-10 h-[300px]" dir="ltr">
         <TemplateCard
-          templateName="Presentation"
-          templateImg="/icons/presentation.svg"
+          templateName="ژرنال آکادمیک"
+          // templateName="Academic Journal"
+          templateImg="/icons/journal.svg"
           templateDesc="This is a test description!"
         />
         <TemplateCard
-          templateName="Thesis"
+          // templateName="Thesis"
+          templateName="پایان‌نامه"
           templateImg="/icons/thesis.svg"
           templateDesc="This is a test description!"
         />
         <TemplateCard
-          templateName="Resume"
-          templateImg="/icons/CV.svg"
+          // templateName="Conference"
+          templateName="کنفرانس"
+          templateImg="/icons/conference.svg"
           templateDesc="This is a test description!"
         />
         <TemplateCard
-          templateName="Poster"
-          templateImg="/icons/poster.svg"
+          // templateName="Resume"
+          templateName="رزومه"
+          templateImg="/icons/resume.svg"
           templateDesc="This is a test description!"
         />
       </div>
-      <SecondaryButton href="/templates">See more</SecondaryButton>
+      <SecondaryButton href="/templates">بیشتر</SecondaryButton>
     </div>
   );
 };
