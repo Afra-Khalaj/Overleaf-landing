@@ -20,10 +20,10 @@ const page = () => {
           borderRadius: "10px",
         }}
       >
-        <h1 className="font-body font-medium text-2xl text-neutral mt-14 ml-20">
+        <h1 className="font-body font-medium text-2xl text-neutral mt-14 ms-20">
           You can view and use our Academic journal projects here!
         </h1>
-        <p className="font-body font-medium text-l text-base-400 mt-3 mb-14 ml-20">
+        <p className="font-body font-medium text-l text-base-400 mt-3 mb-14 ms-20">
           Choose the template that best suits your project, click on it to view
           the project's preview.
         </p>

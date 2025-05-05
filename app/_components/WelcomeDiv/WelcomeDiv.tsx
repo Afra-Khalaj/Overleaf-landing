@@ -8,15 +8,19 @@ const WelcomeDiv = () => {
       <div className="flex flex-row items-center justify-between py-10 px-12 h-[600px]">
         <div className="flex flex-col content-between w-[50%]">
           <h1 className="text-4xl font-bold font-title mb-10">
-            Start Writing with <span className="text-primary">LaTeX</span>:
-            Powerful and Simple
+<!--             Start Writing with <span className="text-primary">LaTeX</span>:
+            Powerful and Simple -->
+                   یک جایگزین ساده و قدرتمند برای{" "}
+        <span className="text-primary">Overleaf</span>
           </h1>
 
           <p className="w-9/12 text-start font-body text-xl font-medium leading-loose">
-            Create professional-grade LaTeX documents with ease. Whether you're
+<!--             Create professional-grade LaTeX documents with ease. Whether you're
             writing a thesis, academic paper, or technical report, HPC LaTeX
             editor offers a clean, intuitive environment to help you write,
-            edit, and compile your LaTeX code with confidence.
+            edit, and compile your LaTeX code with confidence. -->
+                    پلتفرم ما برای نگارش و همکاری در پروژه‌های LaTeX طراحی شده تا ساده،
+        روان، و بدون دردسر باشه، مخصوصا برای کاربران فارسی‌زبان.
           </p>
 
           <PrimaryButton
