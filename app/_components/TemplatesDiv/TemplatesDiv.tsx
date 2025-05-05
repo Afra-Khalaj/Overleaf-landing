@@ -12,28 +12,28 @@ const TemplatesDiv = () => {
           // templateName="Academic Journal"
           templateImg="/icons/journal.svg"
           templateDesc="This is a test description!"
-          templateSlug="templates/academic-journal"
+          templateSlug="academic-journal"
         />
         <TemplateCard
           // templateName="Thesis"
           templateName="پایان‌نامه"
           templateImg="/icons/thesis.svg"
           templateDesc="This is a test description!"
-          templateSlug="templates/thesis"
+          templateSlug="thesis"
         />
         <TemplateCard
           // templateName="Conference"
           templateName="کنفرانس"
           templateImg="/icons/conference.svg"
           templateDesc="This is a test description!"
-          templateSlug="templates/conference"
+          templateSlug="conference"
         />
         <TemplateCard
           // templateName="Resume"
           templateName="رزومه"
           templateImg="/icons/resume.svg"
           templateDesc="This is a test description!"
-          templateSlug="templates/resume"
+          templateSlug="resume"
         />
       </div>
       <SecondaryButton href="/templates">بیشتر</SecondaryButton>
