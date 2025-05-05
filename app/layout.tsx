@@ -28,6 +28,9 @@ export default function RootLayout({
     <html
       lang="en"
       dir="ltr"
+
+      // lang="fa"
+      // dir="rtl"
       className={`${playfair.variable} ${sourceSans.variable}`}
     >
       <head>
