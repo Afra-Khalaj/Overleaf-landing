@@ -123,7 +123,7 @@ const Page = () => {
           onClick={handleOverlayClose}
         >
           <div
-            className="bg-white rounded-xl shadow-xl p-8 w-[80%] flex gap-8 justify-around h-[80vh]"
+            className="bg-white rounded-xl shadow-xl py-[4%] w-[80%] flex gap-8 justify-around h-[80vh]"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -137,7 +137,7 @@ const Page = () => {
               <img
                 src={selectedTemplate.image}
                 alt={selectedTemplate.title}
-                className="w-full h-auto rounded shadow-lg"
+                className="w-auto h-auto rounded shadow-lg"
               />
             </div>
             <div className="flex flex-col justify-between" dir="rtl">
