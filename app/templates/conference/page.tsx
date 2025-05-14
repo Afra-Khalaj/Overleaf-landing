@@ -2,97 +2,112 @@
 
 import Footer from "@/app/_components/Footer/Footer";
 import Header from "@/app/_components/Header/Header";
+import PrimaryButton from "@/app/_components/PrimaryButton/PrimaryButton";
+import SecondaryButton from "@/app/_components/SecondaryButton/SecondaryButton";
 import React, { useState } from "react";
-import Image from "next/image";
+
+type Template = {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+};
+
+const templates: Template[] = [
+  {
+    id: 1,
+    title: "Topology proceedings 3 example",
+    description:
+      "This is a Topology Proceedings journal LaTeX template with proper margins and headers.",
+    image: "/templates/Topology-Proceedings-Template.png",
+  },
+  {
+    id: 2,
+    title: "Manuscript Template for Solar Physics",
+    description:
+      "Standard manuscript template for journals related to Solar Physics.",
+    image: "/templates/Topology-Proceedings-Template.png",
+  },
+  {
+    id: 3,
+    title: "Cambridge Medium Template Class File",
+    description:
+      "Cambridge University Press medium template class with formatted sections.",
+    image: "/templates/Topology-Proceedings-Template.png",
+  },
+  {
+    id: 4,
+    title: "Nordic Machine Intelligence Template",
+    description:
+      "Template for submissions to the Nordic Machine Intelligence journal.",
+    image: "/templates/Topology-Proceedings-Template.png",
+  },
+  {
+    id: 5,
+    title: "Advanced Template Example",
+    description:
+      "An advanced academic template with citation styling and abstract section.",
+    image: "/templates/Topology-Proceedings-Template.png",
+  },
+  {
+    id: 6,
+    title: "IEEE Paper Format Template",
+    description:
+      "Official IEEE format template for journal and conference submissions.",
+    image: "/templates/Topology-Proceedings-Template.png",
+  },
+  {
+    id: 7,
+    title: "Nature Journal Format",
+    description: "Structured to match the requirements of Nature submissions.",
+    image: "/templates/Topology-Proceedings-Template.png",
+  },
+  {
+    id: 8,
+    title: "Elsevier Journal Template",
+    description: "Compatible with Elsevier's journal paper formatting.",
+    image: "/templates/Topology-Proceedings-Template.png",
+  },
+];
 
 const Page = () => {
-  const [isOverlayOpen, setIsOverlayOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState("");
+  const [selectedTemplate, setSelectedTemplate] = useState<Template | null>(
+    null
+  );
 
-  const openOverlay = (imageSrc: any) => {
-    setSelectedImage(imageSrc);
-    setIsOverlayOpen(true);
-    document.body.classList.add("overflow-hidden"); // Prevent scrolling on the background
+  const handleOverlayClose = () => {
+    setSelectedTemplate(null);
   };
-
-  const closeOverlay = () => {
-    setIsOverlayOpen(false);
-    setSelectedImage("");
-    document.body.classList.remove("overflow-hidden"); // Re-enable scrolling
-  };
-
-  const templates = [
-    { src: "/templates/Topology-Proceedings-Template.png", alt: "Topology proceedings 3 example", title: "Topology proceedings 3 example" },
-    { src: "/templates/Topology-Proceedings-Template.png", alt: "Manuscript Template for Solar Physics", title: "Manuscript Template for Solar Physics" },
-    { src: "/templates/Topology-Proceedings-Template.png", alt: "Cambridge Medium Template Class File", title: "Cambridge Medium Template Class File" },
-    { src: "/templates/Topology-Proceedings-Template.png", alt: "Nordic Machine Intelligence Template", title: "Nordic Machine Intelligence Template" },
-    { src: "/templates/Topology-Proceedings-Template.png", alt: "Nordic Machine Intelligence Template", title: "Nordic Machine Intelligence Template" },
-    { src: "/templates/Topology-Proceedings-Template.png", alt: "Nordic Machine Intelligence Template", title: "Nordic Machine Intelligence Template" },
-    { src: "/templates/Topology-Proceedings-Template.png", alt: "Nordic Machine Intelligence Template", title: "Nordic Machine Intelligence Template" },
-    { src: "/templates/Topology-Proceedings-Template.png", alt: "Nordic Machine Intelligence Template", title: "Nordic Machine Intelligence Template" },
-  ];
 
   return (
-    <div className={isOverlayOpen ? "blur-md" : ""}>
+    <>
       <Header />
-      <div
-        style={{
-          marginTop: "10px",
-          backgroundColor: "#F4F5F6",
-          height: "120px",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          width: "100%",
-          marginBottom: "50px",
-          boxShadow: "0px 0px 5px rgba(0, 0, 0, 0.2)",
-          borderRadius: "10px",
-        }}
-      >
+      <div className="mt-2 mb-12 bg-gray-100 h-32 flex flex-col justify-center w-full shadow-sm rounded-lg">
         <h1 className="font-medium text-2xl text-neutral mt-14 ms-20">
-          {/* You can view and use our Academic journal projects here! */}
-          می‌تونید پروژه‌ها در قالب کنفرانس رو اینجا ببینید و استفاده کنید!
+          می‌توانید قالب کنفرانس را در این صفحه مشاهده کنید.
         </h1>
-        <p className="font-medium text-l text-base-400 mt-3 mb-14 ms-20">
-          {/* Choose the template that best suits your project, click on it to view
-          the project&apos;s preview. */}
-          پروژه‌ای که برات مناسب‌تره رو انتخاب کن و با کلیک کردن روش پیش‌نمایش
-          پروژه رو ببین.
+        <p className="font-medium text-base text-base-400 mt-3 mb-14 ms-20">
+          با کلیک کردن روی هر پروژه پیش‌نمایش آن را ببینید.
         </p>
       </div>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-evenly",
-          padding: "80px",
-          paddingTop: "30px",
-        }}
-        dir="ltr"
-      >
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(4, 1fr)",
-            gap: "100px",
-            justifyItems: "center",
-          }}
-        >
-          {templates.map((template, index) => (
-            <div key={index} style={{ marginBottom: "10px", cursor: "pointer" }} onClick={() => openOverlay(template.src)}>
-              <Image
-                src={template.src}
-                alt={template.alt}
+
+      <div className="flex justify-evenly px-20 pt-8">
+        <div className="grid grid-cols-4 gap-24 justify-items-center">
+          {templates.map((template) => (
+            <div
+              key={template.id}
+              className="cursor-pointer"
+              onClick={() => setSelectedTemplate(template)}
+            >
+              <img
+                src={template.image}
+                alt={template.title}
                 width={300}
-                height={200} // Added height for Image component
-                style={{
-                  boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)",
-                  borderRadius: "2px",
-                }}
+                className="shadow-lg rounded-sm"
               />
               <h1
-                className="font-body font-medium text-l mt-5 text-neutral"
-                style={{ width: "200px", textAlign: "center" }}
+                className="font-body font-medium text-lg mt-5 text-neutral w-48"
+                dir="ltr"
               >
                 {template.title}
               </h1>
@@ -100,26 +115,61 @@ const Page = () => {
           ))}
         </div>
       </div>
-      <Footer />
 
-      {/* Overlay */}
-      {isOverlayOpen && (
+      {selectedTemplate && (
         <div
-          className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black/50 z-50"
-          onClick={closeOverlay}
+          className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex items-center justify-center"
+          dir="ltr"
+          onClick={handleOverlayClose}
         >
-          <div className="bg-white rounded-md shadow-lg p-8" onClick={(e) => e.stopPropagation()}>
-            <Image src={selectedImage} alt="Overlay Image" width={600} height={400} className="rounded-md" />
-            <button className="absolute top-4 right-4 text-gray-600 hover:text-gray-800 cursor-pointer" onClick={closeOverlay}>
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
+          <div
+            className="bg-white rounded-xl shadow-xl p-8 w-[80%] flex gap-8 justify-around h-[80vh]"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={handleOverlayClose}
+              className="absolute top-4 left-4 text-gray-500 hover:text-gray-700 bg-gray-200 hover:bg-gray-300 rounded-full w-8 h-8 flex items-center justify-center"
+              aria-label="Close"
+            >
+              &times;
             </button>
-            {/* You can add more content to the overlay here if needed */}
+            <div className="flex justify-center">
+              <img
+                src={selectedTemplate.image}
+                alt={selectedTemplate.title}
+                className="w-full h-auto rounded shadow-lg"
+              />
+            </div>
+            <div className="flex flex-col justify-between" dir="rtl">
+              <h2 className="text-2xl font-semibold mb-4">
+                {/* {selectedTemplate.title} */}
+                اسم پروژه
+              </h2>
+              <p className="text-gray-600 text-lg">
+                {/* {selectedTemplate.description} */}
+                توضیحاتی درمورد پروژه
+              </p>
+              <div className="flex mt-7 gap-4">
+                <PrimaryButton
+                  className="text-[23px] px-10"
+                  href="https://dev.latex.hpc.ipm.ac.ir"
+                >
+                  ادیتور
+                </PrimaryButton>
+                <SecondaryButton
+                  className="text-[23px] px-10 mt-7"
+                  href="https://dev.latex.hpc.ipm.ac.ir"
+                >
+                  مشاهده pdf
+                </SecondaryButton>
+              </div>
+            </div>
           </div>
         </div>
       )}
-    </div>
+
+      <Footer />
+    </>
   );
 };
 

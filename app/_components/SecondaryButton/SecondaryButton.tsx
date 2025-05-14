@@ -5,9 +5,10 @@ import Link from "next/link";
 interface SecondaryButtonProps {
   children: string;
   href: string;
+  className?: string;
 }
 
-const SecondaryButton = ({ children, href }: SecondaryButtonProps) => {
+const SecondaryButton = ({ children, href, className }: SecondaryButtonProps) => {
   return (
     <Link href={href}>
       <button

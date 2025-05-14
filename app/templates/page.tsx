@@ -20,7 +20,7 @@ const Templates = () => {
           dir="ltr"
         >
           <TemplateCard
-            templateName="ژرنال آکادمیک"
+            templateName="ژورنال آکادمیک"
             // templateName="Academic Journal"
             templateImg="/icons/journal.svg"
             templateDesc="This is a test description!"

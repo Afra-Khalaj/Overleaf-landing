@@ -19,8 +19,9 @@ const WelcomeDiv = () => {
             writing a thesis, academic paper, or technical report, HPC LaTeX
             editor offers a clean, intuitive environment to help you write,
             edit, and compile your LaTeX code with confidence. --> */}
-            پلتفرم ما برای نگارش و همکاری در پروژه‌های LaTeX طراحی شده تا ساده،
-            روان، و بدون دردسر باشه، مخصوصا برای کاربران فارسی‌زبان.
+            سامانه ما با هدف ساده‌سازی نگارش و همکاری در پروژه‌های LaTeX طراحی شده
+            است؛ به‌گونه‌ای که تجربه‌ای ساده، روان و بدون پیچیدگی را به‌ویژه
+            برای کاربران فارسی‌زبان فراهم کند.
           </p>
 
           <PrimaryButton
