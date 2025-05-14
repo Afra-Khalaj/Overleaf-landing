@@ -8,7 +8,7 @@ const TemplatesDiv = () => {
       <h1 className="mt-20 mb-10 text-2xl">قالب‌های ما</h1>
       <div className="flex flex-row items-center space-x-7 mb-10 h-[300px]" dir="ltr">
         <TemplateCard
-          templateName="ژرنال آکادمیک"
+          templateName="ژورنال آکادمیک"
           // templateName="Academic Journal"
           templateImg="/icons/journal.svg"
           templateDesc="This is a test description!"
